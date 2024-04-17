@@ -20,10 +20,9 @@ def test_basic_duckduckgo_search(browser):
   assert PHRASE in result_page.title()
 
   # And the search result query is "Selenium"
-  assert PHRASE == result_page.serach_input_value()
+  assert PHRASE == result_page.search_input_value()
 
   # And the search result links pertain to "Selenium"
   for title in result_page.result_link_titles():
     assert PHRASE.lower() in title.lower()
 
-  raise Exception("Incomplete Test")
