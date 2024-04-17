@@ -118,6 +118,9 @@ If these steps don't work in your project, then try to run without pipenv:
 * Install Python packages directly using `pip`.
 * Run tests directly using `python -m pytest`.
 
+To solve OpenSSL issue "NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3':"
+* Run `pipenv run pip3 install urllib3==1.26.15`
+
 ## Repository Branching
 
 The `master` branch contains the code for the course's starting point.
